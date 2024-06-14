@@ -1,4 +1,4 @@
-# Prototipação-Projeto_Aplica_II
+# Prototipação-Projeto_Aplicado_II
 
 Este repositório contém o projeto desenvolvido para a disciplina Projeto Aplicado II, onde o objetivo foi criar um site para controle de cadastros e reservas da pousada Quinta do Ypuã.
 
