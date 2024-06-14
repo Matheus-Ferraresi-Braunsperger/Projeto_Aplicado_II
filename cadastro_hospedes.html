@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta do Ypuã - cadastro hóspedes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro_hospedes_style.css">
+<!--     Animacao
+ -->    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.jpg" alt="">
+        <div class="nav-div">
+            <p><a href="./cadastro_hospedes.html">Cadastro Hóspede</a></p>
+           <p><a href="./acomodacoes.html">Acomodações</a></p>
+           <p><a href="./reservas.html">Reservas</a></p>
+        </div>
+        <div></div>
+    </header>
+    <div class="main-img">
+        <div class="main-div">
+            <div class="red-left-block animate__animated animate__fadeInLeft">
+                <div class="page-name-box">
+                    <h3 id="text-name-box1">Cadastro</h3>
+                    <h3 id="text-name-box2">Hóspede</h3>
+                    <h3 id="text-name-box3" class="hidden">Exibir</h3>
+                    <h3 id="text-name-box4" class="hidden">Cadastros</h3>
+                </div>
+            </div>
+            <div class="content-div  animate__animated animate__fadeInRight ">
+                <form action="" class="form-div" id="form-div-cad">
+                    <div class="form-name">
+                        <label for="form-name">Nome:</label>
+                        <input type="text" id="form-name">
+                    </div>
+                    <div class="form-id">
+                        <div class="form-cpf">
+                            <label for="form-cpf">CPF:</label>
+                            <input type="text" id="form-cpf">
+                        </div>
+                        <div class="form-rg">
+                            <label for="form-rg">RG:</label>
+                            <input type="text" id="form-rg">
+                        </div>
+                    </div>
+                    <div class="form-contact">
+                        <div class="form-email">
+                            <label for="form-email">Email:</label>
+                            <input type="email" id="form-email">
+                        </div>
+                        <div class="form-phone-number">
+                            <label for="form-phone-number">Telefone:</label>
+                            <input type="text" id="form-phone-number">
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="show-data" id="show-data-button" type="button">Exibir Cadastros</button>
+                        <button class="save-data" id="save-data-button">Salvar</button>
+                    </div>
+                </form>
+
+                <div id="show-data-main-div" class="hidden">
+                    <div class="search-bar-div">
+                        <label for="search-bar">Nome:</label>
+                        <input type="search">
+                        <button>Procurar:</button>
+                    </div>
+                    <div class="show-customer-data">
+                        <table class="show-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome:</th>
+                                    <th>Cpf:</th>
+                                    <th>Rg:</th>
+                                    <th>Email:</th>
+                                    <th>Telefone:</th>
+                                    <th>Check-In/Out</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chris</td>
+                                    <td>0000000001</td>
+                                    <td>00000002</td>
+                                    <td>Chris@gmail.com</td>
+                                    <td>(48)00000003</td>
+                                    <td>
+                                        <button>Check-In</button>
+                                        <button>Check-Out</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer-div">
+            <p>Quinta do Ypuã - todos os direitos reservados @2024</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

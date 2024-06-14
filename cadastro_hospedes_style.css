@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.hidden{
+    display: none;
+}
+
+.main-img{
+    height: 55rem;
+    background-size: cover;
+    background-image: url(./img/bkg3_opacity.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main-div{
+   height: 40rem;
+    width: 90rem;
+    display: flex;
+    align-items: center;
+}
+
+.red-left-block{
+    background-color: var(--red);
+    width: 25%;
+    height: 55%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .page-name-box{
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    h3{
+        font-size: 2.5rem;
+        margin: 0;
+        color: white;
+        
+    }
+}
+
+.content-div{
+    background-color: var(--grey);
+    border: 1px solid #000;
+    margin: 0 5%;
+    width: 60%;
+    height: 55%;
+}
+
+.form-div, #show-data-main-div{
+    padding: 3%;
+    font-size: 1.4rem;
+}
+
+.form-name{
+    margin-bottom: 3%;
+    input{
+        height: 1.4rem;
+        width: 100%;
+    }
+    
+}
+
+.form-id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    input{
+        height: 1.4rem;
+        width: 100%;
+    
+    }
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    input{
+        height: 1.4rem;
+        width: 100%;
+    
+    }
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+    button{
+        font-size: 1.2rem;
+        color: white;
+        padding: 0.5rem;
+        background-color: var(--red);
+    }
+}
+
+
+
+/* Acomodações */
+
+.acomodacoes-line1, .acomodacoes-line2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.acomodacoes-button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 3%;
+}
+
+.acomodacoes-edit{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--red);
+    margin: 3%;
+}
+
+/* Editar Acomodações
+ */
+
+ .form-div2{
+   display: flex;
+   flex-direction: row;
+   padding: 3%;
+   font-size: 1.4rem;
+   input{
+    height: 1.4rem;
+   }
+ }
+
+ .left-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    #amenidades-edit{
+        height: 10rem;
+    }
+    .amenidades-div-edit{
+        margin-top: 1.5%;
+    }
+ }
+
+ .right-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    #obs-edit{
+        height: 13.23rem;
+    }
+    .obs-div-edit{
+        margin-top: 1.5%;
+    }
+ }
+
+ .save-edit{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--red);
+    margin: 3%;
+    margin-right: 0;
+ }
+ .edit-button-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+ }
+
+
+.data-entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input, select {
+        height:1.5rem;
+    }
+    button{
+        height: 1.5rem;
+        background-color: var(--red);
+        color: white;
+    }
+}
+
+table {
+    border: 2px solid rgb(140 140 140);
+    margin-top: 3%;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+  }
+
+  .show-data-div{
+    font-size: 1.2rem;
+        color: white;
+        padding: 0.5rem;
+        background-color: var(--red);
+  }
+
+
+
+/* Show Edit acomodações*/
+
+.domo-left-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}  
+.domo-div{
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    .label-div{
+        margin-bottom: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 70%;
+    }
+}
+
+.domo-right-div{
+    width: 50%;
+    input{
+        height: 12rem;
+        width: 100%;
+    }
+}  
+
+.domo-buttons{
+    padding-top: 3%;
+    margin-right: -2%;
+    display: flex;
+    justify-content: flex-end;
+    button{
+        margin-left: 3%;
+        font-size: medium;
+        height: 2rem;
+        background-color: var(--red);
+        color: white;
+    }
+}

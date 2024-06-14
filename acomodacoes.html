@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta do Ypuã - cadastro hóspedes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hidden.css">
+    <link rel="stylesheet" href="cadastro_hospedes_style.css">
+<!--     Animacao
+ -->    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.jpg" alt="">
+        <div class="nav-div">
+            <p><a href="./cadastro_hospedes.html">Cadastro Hóspede</a></p>
+           <p><a href="./acomodacoes.html">Acomodações</a></p>
+           <p><a href="./reservas.html">Reservas</a></p>
+        </div>
+        <div></div>
+    </header>
+    <div class="main-img">
+        <div class="main-div">
+            <div class="red-left-block animate__animated animate__fadeInLeft">
+                <div class="page-name-box">
+                    <h3>Acomodações</h3>
+                </div>
+            </div>
+<!--             MENU COM AS ACOMODAÇÕES
+ -->            <div class="content-div  animate__animated animate__fadeInRight">
+                <div action="" class="form-div" id="form-div1">
+                  <div class="acomodacoes-line1">
+                    <button class="acomodacoes-button" id="domo-id">DOMO</button>
+                    <button class="acomodacoes-button" id="charrua-id">CHARRUA (BUS)</button>
+                    <button class="acomodacoes-button" id="suite-id">SUÍTE COM COZINHA</button>
+                  </div>
+                  <div class="acomodacoes-line2">
+                    <button class="acomodacoes-button" id="chale-id">CHALÉ FAMÍLIA</button>
+                    <button class="acomodacoes-button" id="cabana-id">CABANA</button>
+                    <button class="acomodacoes-button" id="estacionamento-id">ESTACIONAMENTO</button>
+                  </div>
+                </div>
+
+<!--                 DOMO EDIT
+ -->                <div class="hidden" id="domo-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Domo" >
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$500" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value="Ar, Wifi, Tv, Frigobar, Ducha, Banheira, Cozinha, Toalhas" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="3" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="1" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                 CHARRUA EDIT
+ -->                <div class="hidden" id="charrua-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Charrua" >
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$700" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value="Ar, Wifi, Tv, Frigobar, Ducha, Banheira, Cozinha, Toalhas" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="2" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="1" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                 SUÍTE EDIT
+ -->                <div class="hidden" id="suite-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Suíte com Cozinha" >
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$650" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value="Ar, Wifi, Tv, Frigobar, Ducha, Banheira, Cozinha, Toalhas" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="3" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="2" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<!--                 CHALÉ EDIT
+ -->                <div class="hidden" id="chale-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Chalé Família" >
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$750" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value="Ar, Wifi, Tv, Frigobar, Ducha, Banheira, Cozinha, Toalhas" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="3" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="2" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<!--                 CABANA EDIT
+ -->                <div class="hidden" id="cabana-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Cabana">
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$450" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value="Ar, Wifi, Tv, Frigobar, Ducha, Banheira, Cozinha, Toalhas" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="3" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="2" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                 ESTACIONAMENTO EDIT
+ -->                <div class="hidden" id="estacionamento-div-id">
+                    <div class="domo-div" id="domo-div-id">
+                        <div class="domo-left-div">
+                            <div class="domo-name label-div">
+                                <label for="name">Nome:</label>
+                                <input type="text" value="Estacionamento">
+                            </div>
+                            <div class="domo-preco label-div">
+                                <label for="preco">Preço:</label>
+                                <input type="text" value="R$230" >
+                            </div>
+                            <div class="domo-amenidades label-div">
+                                <label for="domo-amenidades">Amenidades:</label>
+                                <input  type="text" value=" Ducha, Cozinha" >
+                            </div>
+                            <div class="domo-check-in label-div">
+                                <label for="domo-check-in">Check-in:</label>
+                                <input type="text" value="14hrs" >
+                            </div>
+                            <div class="domo-acomoda label-div">
+                                <label for="domo-acomoda">Acomoda:</label>
+                                <input type="text" value="2" >
+                            </div>
+                            <div class="domo-cama label-div">
+                                <label for="domo-cama">Camas:</label>
+                                <input type="text" value="0" >
+                            </div>
+                        </div>
+                        <div class="domo-right-div">
+                            <div class="domo-obs">
+                                <label for="domo-obs">Observações:</label>
+                                <input type="text">
+                            </div>
+                            <div class="domo-buttons">
+                                <button class="domo-save">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+               
+            </div>
+        </div>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer-div">
+            <p>Quinta do Ypuã - todos os direitos reservados @2024</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="acomodacoes.js"></script>
+</body>
+</html>
